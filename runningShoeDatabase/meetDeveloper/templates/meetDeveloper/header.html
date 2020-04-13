@@ -1,0 +1,71 @@
+<DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Meet the Developer</title>
+	<meta charset="utf-8" />
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+	<div class="container-fluid" style="min-height:95%; ">
+		<div class="row">
+			  <div class="col-sm-2">
+				  <br>
+				  <center>
+					<img src="{% static 'personal/img/profile.jpg' %}" class="responsive-img" style='max-height:100px;' alt="face">
+				  </center>
+			  </div>
+			  <div class="col-sm-10">
+				  <br>
+				  <center>
+				  <h3>Meet the Developer, Jaden Costa</h3>
+				  </center>
+			  </div>
+		</div><hr>
+
+		<div class="row">
+		  <div class="col-sm-2">
+		  <br>
+
+		  <br>
+			<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
+			  <ul class="nav nav-pills nav-stacked">
+				<li><a href='/'>Home</a></li>
+				<li><a href='/blog/'>Blog</a></li>
+				<li><a href='/contact/'>Contact</a></li>
+			  </ul>
+			</div>
+		  </div>
+		  <div class="col-sm-10">
+		  
+			<div class='container-fluid'>
+			<br><br>
+			   <p>Hello there everyone! My name is Jaden Costa, I'm a Computer Science major at Olivet College.
+				  I decided to make this server experiment for one of my classes, but with a twist. I was 
+				  curious to see what my fellow runers thought of different types of running shoes. So the inner
+				  shoe guru in me decided to make my project here about what types of shoes my friends like and 
+				  why they like them. Please feel free to follow the links below to fill out what shoes you like
+				  to use and why you like them! Thank you again for your help! God bless you all!</p>	
+			</div>
+		  </div>
+		</div> 
+	</div>
+	<footer>
+		<div class="container-fluid" style='margin-left:15px'>
+			<p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a></p>
+		</div>
+	</footer>	
+	
+</body>
+
+</html>
