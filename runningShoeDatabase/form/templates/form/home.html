@@ -1,0 +1,53 @@
+{% extends "form/header.html" %}
+
+{% block content %}
+<body>
+	<form action="index.php" name="shoe input" method="POST">
+	Shoe Brand: <input type="text" name="brand"><br>
+	Shoe Name: <input type="text" name="name"><br>
+	<br>
+	Is this shoe a pair of:<br>
+	<input type="radio" name="type" value="trainer">Trainer<br>
+	<input type="radio" name="type" value="spikes">Spikes<br>
+	<input type="radio" name="type" value="racing flats">Racing Flats<br>
+	<br>
+	Cushion (mm) in heel:<input type="text" name="heel"><br>
+	Cushion (mm) in forefoot:<input type="text" name="toe"><br>
+	<label for="spikes">Number of spikes:</label>
+	<select id="spikes">
+		<option value=0>0</option>
+		<option value=1>1</option>
+		<option value=2>2</option>
+		<option value=3>3</option>
+		<option value=4>4</option>
+		<option value=5>5</option>
+		<option value=6>6</option>
+		<option value=7>7</option>
+		<option value=8>8</option>
+		<option value=9>9</option>
+		<option value=10>10</option>
+	</select><br>
+	<label for="event">These shoes are made for:</label>
+	<select id="event">
+		<option value="distance">Distance</option>
+		<option value="sprints">Sprints</option>
+		<option value="mid distance">Mid Distance</option>
+		<option value="jumps">Jumps</option>
+		<option value="throws">Throws</option>
+	</select><br>
+	<br>
+	<label for="plate">Does this shoe have a carbon-fiber plate?</label>
+	<select id="plate">
+		<option value="yes">Yes</option>
+		<option value="False">No</option>
+	</select>
+	<br>
+	<label for="comments">Please feel free to write any comments (positive and/or negative) about the shoes here:</label>
+	<textarea id="comments" rows="4" cols="50">
+		Please write your comments here about the ride, feel, whether the shoes were true to size, preferred event, etc. 
+	</textarea>
+	<br>
+	<input type="submit" value="Submit">
+	</form>
+</body>
+{% endblock %}
