@@ -6,4 +6,7 @@ def index(request):
 
 def process(request):
     if request.method=='POST':
-        print(request.session['toe'])
+        name=request.POST['spikes']
+        f=open('test.txt', 'w')
+        f.write(name)
+        f.close()
