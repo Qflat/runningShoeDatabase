@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('meetDeveloper', include('meetDeveloper.urls')),
     path('form', include('form.urls')),
+    path('process', include('form.urls')),
 ]
