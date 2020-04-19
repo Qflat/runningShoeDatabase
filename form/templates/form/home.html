@@ -2,7 +2,7 @@
 
 {% block content %}
 <body>
-	<form action="index.php" name="shoe input" method="POST">
+	<form action="process" name="shoe input" method="POST">{% csrf_token %}
 	Shoe Brand: <input type="text" name="brand"><br>
 	Shoe Name: <input type="text" name="name"><br>
 	<br>
@@ -47,7 +47,7 @@
 		Please write your comments here about the ride, feel, whether the shoes were true to size, preferred event, etc. 
 	</textarea>
 	<br>
-	<input type="submit" value="Submit">
+	<button onclick="location.href='{% url 'process' %}">Submit</button>
 	</form>
 </body>
 {% endblock %}
