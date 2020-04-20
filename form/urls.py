@@ -1,6 +1,7 @@
 from django.conf.urls import url
-from . import views
+from .views import ShoeForm
 
 urlpatterns = [
-    url('', views.index, name='index'),
-    url('process', views.process, name='process')]
+    url('', ShoeForm.as_view(), name='ShoeForm'),
+    #url('process', views.process, name='process'),
+    ]
